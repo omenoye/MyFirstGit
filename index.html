@@ -1,456 +1,290 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>F-LeviteGithub - Portfolio</title>
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Bootstrap core CSS -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head lang="en">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="css/mdb.min.css" rel="stylesheet">
-    <!-- Your custom styles (optional) -->
-    <link href="css/style.css" rel="stylesheet">
-    <style>
-        body {
-            font-family: "Lato", sans-serif;
-        }
+    <!-- Custom CSS -->
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
 
-        .sidenav {
-            height: 100%;
-            width: 0;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            background-color:#004085;
-            overflow-x: hidden;
-            transition: 0.5s;
-            padding-top: 60px;
-        }
-        .sidenav a{
-            padding: 8px 8px 8px 32px;
-            text-decoration: none;
-            font-size: 15px;
-            color: #ffffff;
-            display: block;
-            transition: 0.3s;
-        }
-        .sidenav a:hover {
-            color: green;
-            display: block;
-            background-color: #f5f5f5;
-            text-decoration: none;
-        }
-
-        .sidenav .closebtn {
-            position: absolute;
-            top: 75px;
-            right: 25px;
-            font-size: 36px;
-            margin-left: 50px;
-        }
-
-        #main {
-            transition: margin-left .5s;
-            padding: 16px;
-        }
-        @media screen and (max-height: 450px) {
-            .sidenav {padding-top: 15px;}
-            .sidenav a {font-size: 18px;}
-        }
-    </style>
+    <link href="css/the-big-picture.css" rel="stylesheet">
+    <link href="css/font-icon.css" rel="stylesheet" type="text/css" />
+    <link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css" />
+    <link href="css/flexslider.css" rel="stylesheet" type="text/css" />
+    <link href="css/responsive.css" rel="stylesheet" type="text/css" />
+    <link href="css/animate.min.css" rel="stylesheet" type="text/css" />    <!-- ============ Google fonts ============ -->
 </head>
-<body>
-<main>
-    <div class="container-fluid">
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &times;</a>
-            &nbsp;
-            <br>
-            &nbsp;
-            <br>
-            <a href="Index.html">Home</a>
-            <a href="about.html">Ticketing local & International</a>
-            <a href="#">Tour Packages</a>
-            <a href="#">Passport Renewer</a>
-            <a href="Index.html">Hotel reservation</a>
-            <a href="about.html">Car Reantals</a>
-            <a href="#">Visa</a>
-            <a href="contact.html">Travle Insurance</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </div>
-        <div id="main">
-            <span style="font-family: elegant-theme-line;color: indigo; font-size:25px;cursor:pointer" onclick="openNav()">&#9776;<nav class="navbar fixed-top navbar-expand-lg navbar-dark #004085 scrolling-navbar">
-              <div class="container">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+<body id="hme">
+<form id="form1" runat="server">
+    <div id="custom-bootstrap-menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <a class="navbar-brand" href="#"><img src="img/LeviteLOgo.jpg" alt="levite" class="img-responsive" height="150px" width="180px" ></a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder">
+                    <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
+                        class="icon-bar"></span><span class="icon-bar"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-                    <ul class="navbar-nav nav-flex-icons">
-                       <marquee behavior="scroll" direction="left">
-                            <span style="font-size:18px;color: #9f105c">OFFICE ADDRESS: Suite  AP-K1, Amac Plaza, Opp. Heritage House, Wuse Zone 3, Abuja</span>
-                            <span style="font-size:18px;color: #9f105c">TEL: 0809266377,  08054117357 EMAIL: teemmagazines@yahoo.com, info@teemmagazine.com</span>
-                        </marquee>
-                    </ul>
-                </div>
-                  <a class="navbar-brand float-right" href="#"><strong><img src="img/Picture3.jpg" width="160px" height="160" class="img-fluid"></strong></a>
-              </div>
-            </nav>
-         </span>
-            <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
-                <!--Indicators-->
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-example-1z" data-slide-to="1"></li>
-                    <li data-target="#carousel-example-1z" data-slide-to="2"></li>
-                </ol>
-                <!--/.Indicators-->
-                <!--Slides-->
-                &nbsp;
-                &nbsp;
-                <br>
-                <div class="carousel-inner" role="listbox">
-                    <!--First slide-->
-                    <div class="carousel-item active">
-                        <img class="d-block w-100 " src="img/Edite-room.jpg" alt="First slide">
-                    </div>
-                    <!--/First slide-->
-                    <!--Second slide-->
-                    <div class="carousel-item">
-                        <img class="d-block w-100 " src="img/04-Home.jpg" alt="Second slide">
-                    </div>
-                    <!--/Second slide-->
-                    <!--Third slide-->
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="img/Lifestyle.gif" alt="Third slide">
-                    </div>
-                    <!--/Third slide-->
-                </div>
-                <!--/.Slides-->
-                <!--Controls-->
-                <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-                <!--/.Controls-->
             </div>
-            &nbsp;
-            <h5 class="text-center"> Lifestyle Travels & Tours Provide a wide range of Services</h5>
-            &nbsp;
-
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class=" mb-4 col-md-3 text-center">
-                        <!--Card-->   <h6 class="text-center">Ticketing (Local and international)</h6>
-                        <div class="card">
-
-                            <!--Card image-->
-                            <div class="view overlay hm-white-slight">
-                                <img src="img/tickecting.jpeg" class="img-fluid" alt="">
-                                <a href="#">
-                                    <div class="mask"></div>
-                                </a>
-                            </div>
-
-                            <!--Card content-->
-                            <div class="card-body text-center">
-                                <!--Title--><!--Text-->
-                                <p class="card-text">We provide verifiable one way, round tripe and multi-city flight bookings for any country visa within minutes at an affordable price</p>
-                                <a href="#" class="btn btn-indigo btn-sm">Learn More</a>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!--Grid column-->
-                    <!--Grid column-->
-                    <div class=" mb-4 col-md-3 text-center ">
-                        <!--Card-->   <h6 class="text-center">Visa Assistance Service</h6>
-
-                        <div class="card">
-
-                            <!--Card image-->
-                            <div class="view overlay hm-white-slight">
-                                <img src="img/tickecting.jpeg" class="img-fluid" alt="">
-                                <a href="#">
-                                    <div class="mask"></div>
-                                </a>
-                            </div>
-
-                            <!--Card content-->
-                            <div class="card-body text-center">
-                                <!--Title--><!--Text-->
-                                <p class="card-text">We provide verifiable one way, round tripe and multi-city flight bookings for any country visa within minutes at an affordable price</p>
-                                <a href="#" class="btn btn-indigo btn-sm">Learn More</a>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!--Grid column-->
-                    <div class=" mb-4 col-md-3 text-center">
-                        <!--Card-->   <h6 class="text-center">Hotel Reservations</h6>
-                        <!--Card-->
-                        <div class="card">
-
-                            <!--Card image-->
-                            <div class="view overlay hm-white-slight">
-                                <img src="img/tickecting.jpeg" class="img-fluid" alt="">
-                                <a href="#">
-                                    <div class="mask"></div>
-                                </a>
-                            </div>
-
-                            <!--Card content-->
-                            <div class="card-body text-center">
-                                <!--Title--><!--Text-->
-                                <p class="card-text">Get your bookings for any city in the world within minutes.perfect for visa purposes </p>
-                                <a href="#" class="btn btn-indigo btn-sm">More</a>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class=" mb-4 col-md-3 text-center">
-                        <!--Card-->   <h6 class="text-center">Passport Renewal </h6>
-                        <!--Card-->
-                        <div class="card">
-
-                            <!--Card image-->
-                            <div class="view overlay hm-white-slight">
-                                <img src="img/tickecting.jpeg" class="img-fluid" alt="">
-                                <a href="#">
-                                    <div class="mask"></div>
-                                </a>
-                            </div>
-
-                            <!--Card content-->
-                            <div class="card-body text-center">
-                                <!--Title-->
-                                <h4 class="card-title">Card title</h4>
-                                <!--Text-->
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-indigo btn-sm">More</a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-             &nbsp;
-
-            <div class="row">
-                <!--Grid column-->
-                <div class=" mb-4 col-md-3 text-center">
-                    <!--Card-->   <h6 class="text-center">Travel Insurance</h6>
-                    <div class="card">
-
-                        <!--Card image-->
-                        <div class="view overlay hm-white-slight">
-                            <img src="img/tickecting.jpeg" class="img-fluid" alt="">
-                            <a href="#">
-                                <div class="mask"></div>
-                            </a>
-                        </div>
-
-                        <!--Card content-->
-                        <div class="card-body text-center">
-                            <!--Title--><!--Text-->
-                            <p class="card-text">Request for your Travel Insurance in minutes with guaranteed covers on emergency medical expenses abroad, travel delays (per night), evacuation & repatriation, loss & delay of baggage, passport theft, escort of beneficiary etc
-                            </p>
-                            <a href="#" class="btn btn-indigo btn-sm">More</a>
-                        </div>
-
-                    </div>
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class=" mb-4 col-md-3 text-center ">
-                    <!--Card-->   <h6 class="text-center">Car Hire Service</h6>
-
-                    <div class="card">
-
-                        <!--Card image-->
-                        <div class="view overlay hm-white-slight">
-                            <img src="img/tickecting.jpeg" class="img-fluid" alt="">
-                            <a href="#">
-                                <div class="mask"></div>
-                            </a>
-                        </div>
-
-                        <!--Card content-->
-                        <div class="card-body text-center">
-                            <!--Title-->
-                            <h4 class="card-title">Card title</h4>
-                            <!--Text-->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-indigo btn-sm">More</a>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!--Grid column-->
-                <div class=" mb-4 col-md-3 text-center">
-                    <!--Card-->   <h6 class="text-center">Religious Tours Packages</h6>
-                    <!--Card-->
-                    <div class="card">
-
-                        <!--Card image-->
-                        <div class="view overlay hm-white-slight">
-                            <img src="img/tickecting.jpeg" class="img-fluid" alt="">
-                            <a href="#">
-                                <div class="mask"></div>
-                            </a>
-                        </div>
-
-                        <!--Card content-->
-                        <div class="card-body text-center">
-                            <!--Title--><!--Text-->
-                            <p class="card-text">Request for our Tour Packages with excellent delivery, rewarding relationship and cost reduction, from start to finish to different destinations arround the world.</p>
-                            <a href="#" class="btn btn-indigo btn-sm">Learn More</a>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class=" mb-4 col-md-3 text-center">
-                    <!--Card-->   <h6 class="text-center">Special Interest Tours </h6>
-                    <!--Card-->
-                    <div class="card">
-
-                        <!--Card image-->
-                        <div class="view overlay hm-white-slight">
-                            <img src="img/tickecting.jpeg" class="img-fluid" alt="">
-                            <a href="#">
-                                <div class="mask"></div>
-                            </a>
-                        </div>
-
-                        <!--Card content-->
-                        <div class="card-body text-center">
-                            <!--Title-->
-                            <h4 class="card-title"></h4>
-                            <!--Text-->
-                            <p class="card-text">
-                                Explore other cultures & values of different environments along the pathway of career development. </p>
-                            <a href="#" class="btn btn-indigo btn-sm">Learn More</a>
-                        </div>
-
-                    </div>
-                </div>
-
-
-            </div>
-
-        </div>
-
-        <script>
-            function openNav() {
-                document.getElementById("mySidenav").style.width = "250px";
-                document.getElementById("main").style.marginLeft = "250px";
-            }
-
-            function closeNav() {
-                document.getElementById("mySidenav").style.width = "0";
-                document.getElementById("main").style.marginLeft= "0";
-            }
-        </script>
-    </div>
-</main>
-<footer class="page-footer text-center" style="background-color: #004085">
-
-    <!--Footer Links-->
-    <div class="container">
-        <div class="row">
-            <!--First column-->
-            <div class="col-md-6">
-                <h6 class="title">Company info</h6>
-                <p>
-                    Email: felixosafele@gmail.com<br>
-                    Phone:08086544455 , 080865534455<br>
-                    We are always ready to deliver quality service<br>
-                    call us now.
-
-                </p>
-            </div>
-            <!--/.First column-->
-
-            <!--Second column-->
-            <div class="col-md-6">
-                <h5 class="title">Foolow us</h5>
-                <ul>
-                    <li><a href="#!">fb 1</a></li>
-                    <li><a href="#!">instagram 2</a></li>
-                    <li><a href="#!">twitter 3</a></li>
+            <div class="collapse navbar-collapse navbar-menubuilder">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="page-scroll" href="index.html">Home</a> </li>
+                    <li><a class="page-scroll" href="portfoilo3.html">Portfoilo 01</a> </li>
+                    <li><a class="page-scroll" href="Portfoilo2.html">Portfoilo 02</a> </li>
+                    <li><a class="page-scroll" href="Lifestyle.html">Portfoilo 04</a> </li>
+                    <li><a class="page-scroll" href="login.aspx">Login</a> </li>
                 </ul>
             </div>
-            <!--/.Second column-->
         </div>
     </div>
-    <!--/.Footer Links-->
+    <!-- Login -->
+    <!-- Start Carousel Main Slider -->
+    <section class="carousel carousel-fade slide home-slider" id="fullslider" data-ride="carousel"
+             data-interval="4500" data-pause="false">
+        <!-- Carousel-Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#fullslider" data-slide-to="0" class="active"></li>
+            <li data-target="#fullslider" data-slide-to="1" class=""></li>
+        </ol>
+        <!-- Carousel-Inner -->
+        <div class="carousel-inner">
+            <div class="item active bg1">
+                <div class="banner-overlay">
+                    <!-- Slide - 1 -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-8 col-xs-12 animated notranstion">
+                                <br class="hidden-sm hidden-xs"/>
+                                <div class="wow" data-wow-duration="1500ms" data-wow-delay="100ms">
+                                    <h1 class="carouselText1 text-left wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="150ms">F-LeviteServices</h1>
+                                    <p class="wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="200ms">
+                                      Your brand is your Identity , Bring Your business to live , We deliver quality Service Buid Ypur Web Site with affordable prize
+                                    </p>
+                                    <br/>
+                                    <div class="text-left buttonleft hidden-xs">
+                                        <a href="#" class="btn btn-lg btn-borderwhite wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="1200ms">Get Started</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-4 hidden-xs animated">
+                                <img src="img/slider/slide1-1.png" alt="" class="slide1-1 wow  fadeInRight"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End Slide - 1 -->
 
-    <!--Copyright-->
-    <div class="footer-copyright">
+
+            <div class="item bg2">
+                <div class="banner-overlay">
+                    <!-- Slide - 2 -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-4 hidden-xs animated">
+                                <img src="img/slider/slide1-1.png" alt="" class="slide1-2 wow fadeInLeft img-responsive"/>
+                            </div>
+                            <div class="col-md-6 col-sm-8 col-xs-12 animated text-right">
+                                <br class="hidden-sm hidden-xs" />
+                                <h3 class="carouselText2 wow fadeInDown" data-wow-duration="600ms" data-wow-delay="100ms">
+                                    Html5 & Css3
+                                </h3>
+                                <br />
+                                <div class="car-highlight1 wow fadeInUp text-left" data-wow-duration="300ms" data-wow-delay="0ms">
+                                    Bootstrap & MdBootstrap!
+                                </div>
+                                <br/>
+                                <div class="car-highlight2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="150ms">
+                                    Search Engine Optimization
+                                </div>
+                                <br/>
+                                <div class="car-highlight3 wow fadeInUp" data-wow-duration="1800ms" data-wow-delay="300ms">
+                                    Responsive Designs with Affordable Prize
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End Slide - 2 -->
+
+
+        </div>
+        <!-- End Carousel-Inner -->
+        <!-- Carousel - Control -->
+        <a class="left carousel-control animated fadeInLeft" href="#fullslider" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+        <a class="right carousel-control animated fadeInRight" href="#fullslider" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+    </section>
+    <!--  End Carousel Main Slider  -->
+
+
+
+    <section id="works" class="works section no-padding">
         <div class="container-fluid">
-            © 2015 Copyright: <a href="https://www.MDBootstrap.com"> LifeStyles Travles</a>
-
+            <div class="row no-gutter">
+                <div class="col-lg-2 col-md-4 col-sm-4 work"> <a href="img/work-1.jpg" class="work-box"> <img src="img/work-1.jpg" alt="">
+                    <div class="overlay">
+                        <div class="overlay-caption">
+                            <p><span class="icon icon-magnifying-glass"></span></p>
+                        </div>
+                    </div>
+                    <!-- overlay -->
+                </a> </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 work"> <a href="img/work-2.jpg" class="work-box"> <img src="img/work-2.jpg" alt="">
+                    <div class="overlay">
+                        <div class="overlay-caption">
+                            <p><span class="icon icon-magnifying-glass"></span></p>
+                        </div>
+                    </div>
+                    <!-- overlay -->
+                </a> </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 work"> <a href="img/work-3.jpg" class="work-box"> <img src="img/work-3.jpg" alt="">
+                    <div class="overlay">
+                        <div class="overlay-caption">
+                            <p><span class="icon icon-magnifying-glass"></span></p>
+                        </div>
+                    </div>
+                    <!-- overlay -->
+                </a> </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 work"> <a href="img/work-4.jpg" class="work-box"> <img src="img/work-4.jpg" alt="">
+                    <div class="overlay">
+                        <div class="overlay-caption">
+                            <p><span class="icon icon-magnifying-glass"></span></p>
+                        </div>
+                    </div>
+                    <!-- overlay -->
+                </a> </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 work"> <a href="img/work-5.jpg" class="work-box"> <img src="img/work-5.jpg" alt="">
+                    <div class="overlay">
+                        <div class="overlay-caption">
+                            <p><span class="icon icon-magnifying-glass"></span></p>
+                        </div>
+                    </div>
+                    <!-- overlay -->
+                </a> </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 work"> <a href="img/work-6.jpg" class="work-box"> <img src="img/work-6.jpg" alt="">
+                    <div class="overlay">
+                        <div class="overlay-caption">
+                            <p><span class="icon icon-magnifying-glass"></span></p>
+                        </div>
+                    </div>
+                    <!-- overlay -->
+                </a> </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 work"> <a href="img/work-7.jpg" class="work-box"> <img src="img/work-7.jpg" alt="">
+                    <div class="overlay">
+                        <div class="overlay-caption">
+                            <p><span class="icon icon-magnifying-glass"></span></p>
+                        </div>
+                    </div>
+                    <!-- overlay -->
+                </a> </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 work"> <a href="img/work-8.jpg" class="work-box"> <img src="img/work-8.jpg" alt="">
+                    <div class="overlay">
+                        <div class="overlay-caption">
+                            <p><span class="icon icon-magnifying-glass"></span></p>
+                        </div>
+                    </div>
+                    <!-- overlay -->
+                </a> </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 work"> <a href="img/work-9.jpg" class="work-box"> <img src="img/work-9.jpg" alt="">
+                    <div class="overlay">
+                        <div class="overlay-caption">
+                            <p><span class="icon icon-magnifying-glass"></span></p>
+                        </div>
+                    </div>
+                    <!-- overlay -->
+                </a> </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 work"> <a href="img/work-10.jpg" class="work-box"> <img src="img/work-10.jpg" alt="">
+                    <div class="overlay">
+                        <div class="overlay-caption">
+                            <p><span class="icon icon-magnifying-glass"></span></p>
+                        </div>
+                    </div>
+                    <!-- overlay -->
+                </a> </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 work"> <a href="img/work-11.jpg" class="work-box"> <img src="img/work-11.jpg" alt="">
+                    <div class="overlay">
+                        <div class="overlay-caption">
+                            <p><span class="icon icon-magnifying-glass"></span></p>
+                        </div>
+                    </div>
+                    <!-- overlay -->
+                </a> </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 work"> <a href="img/work-12.jpg" class="work-box"> <img src="img/work-12.jpg" alt="">
+                    <div class="overlay">
+                        <div class="overlay-caption">
+                            <p><span class="icon icon-magnifying-glass"></span></p>
+                        </div>
+                    </div>
+                    <!-- overlay -->
+                </a> </div>
+            </div>
         </div>
-    </div>
-    <!--/.Copyright-->
+    </section>
+    <!-- work section -->
+    <!-- Footer section -->
+    <footer class="footer">
+        <div class="footer-top section-tb">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h5>Lagos</h5>
+                        <p>felixosafele@gmail.com.<br>
+                          </p>
+                        <p>Copyright © 2017. All Rights Reserved.<a href="felixnewapp.azurewebsites.net"> F-leviteServices</a></p>
+                    </div>
+                    <div class="footer-col col-md-3">
+                        <h5>Services We Offer</h5>
+                        <p>
+                        <ul>
+                            <li><a href="#">Web development</a></li>
+                            <li><a href="#">Website Design</a></li>
+                            <li><a href="#">Graphic Design</a></li>
+                            <li><a href="#">Social Media</a></li>
+                            <li><a href="#">User Experience</a></li>
+                        </ul>
+                        </p>
+                    </div>
+                    <div class="footer-col col-md-3">
+                        <h5>Like us Share us</h5>
+                        <ul class="footer-share">
+                            <li><a href="#"><i class="fa fa-facebook">fb</i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin">whatsapp</i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-2">
+                        <h5>Follow</h5>
+                        <ul class="footer-share">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer top -->
 
-</footer>
-
-
-
-<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-<!-- Bootstrap tooltips -->
-<script type="text/javascript" src="js/popper.min.js"></script>
-<!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<!-- MDB core JavaScript -->
-<script type="text/javascript" src="js/mdb.min.js"></script>
-<script src="https://maps.google.com/maps/api/js"></script>
-<!-- Google Maps settings -->
-<script>
-    // Regular map
-    function regular_map() {
-        var var_location = new google.maps.LatLng(40.725118, -73.997699);
-
-        var var_mapoptions = {
-            center: var_location,
-            zoom: 14
-        };
-
-        var var_map = new google.maps.Map(document.getElementById("map-container"),
-                var_mapoptions);
-
-        var var_marker = new google.maps.Marker({
-            position: var_location,
-            map: var_map,
-            title: "New York"
+    </footer>
+    <!-- Footer section -->
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/jquery.easing.min.js" type="text/javascript"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <script src="js/wow.js" type="text/javascript"></script>
+    <script src="js/retina.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+        //WOW Scroll Spy
+        var wow = new WOW({
+            //disabled for mobile
+            mobile: false
         });
-    }
-
-    // Initialize maps
-    google.maps.event.addDomListener(window, 'load', regular_map);
-</script>
-
-
-<!-- Carousel options -->
-<script>
-    $('.carousel').carousel({
-        interval: 2000
-    })
-</script>
+        wow.init();
+    </script>
+</form>
 </body>
 </html>
